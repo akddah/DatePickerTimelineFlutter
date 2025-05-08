@@ -49,7 +49,7 @@ class GregorianDateWidget extends StatelessWidget {
             children: <Widget>[
               Text(DateFormat("MMM", locale).format(date).toUpperCase(), // Month
                   style: monthTextStyle),
-              Text(date.day.toString(), // Date
+              Text(DateFormat("d", locale).format(date), // Date
                   style: dateTextStyle),
               Text(DateFormat("E", locale).format(date).toUpperCase(), // WeekDay
                   style: dayTextStyle)
